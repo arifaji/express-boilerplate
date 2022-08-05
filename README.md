@@ -14,7 +14,7 @@
 - Eslint
 - Prettier
 - Eslint berbasis rule Airbnb
-- Husky pre-push
+- Husky pre-push : Biar penulisan JS memiliki standar
 - Dotenv - Pengaturan Env Variabel (WIP)
 - Error Handling (WIP - kalo lg ga mager)
 

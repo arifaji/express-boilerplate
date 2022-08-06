@@ -33,8 +33,21 @@ const logger = winston.createLogger({
         alignColorsAndTime
       ),
     }),
-    new winston.transports.File({ filename: 'error.log', level: 'error' }),
-    new winston.transports.File({ filename: 'combined.log' }),
+    new winston.transports.File({
+      format: winston.format.combine(
+        winston.format.timestamp(),
+        winston.format.json()
+      ),
+      filename: 'error.log',
+      level: 'error',
+    }),
+    new winston.transports.File({
+      format: winston.format.combine(
+        winston.format.timestamp(),
+        winston.format.json()
+      ),
+      filename: 'combined.log',
+    }),
   ],
 });
 

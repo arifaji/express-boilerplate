@@ -15,14 +15,19 @@
 - Prettier
 - Eslint berbasis rule Airbnb
 - Husky pre-push : Biar penulisan JS memiliki standar
-- Dotenv - Pengaturan Env Variabel (WIP)
-- Error Handling (WIP - kalo lg ga mager)
+- Dotenv - Pengaturan Env Variabel
+- Error Handling
 
 #### Requirements
 
 - Node + npm
 - Nodemon (optional)
 - Text editor
+
+## Environment Variables
+
+Kalo pengen jalan sebagaimana mestinya pastikan punya .env file di projectnya ya.
+Contohnya bisa cek di dev.env
 
 ## Dev Dependencies
 

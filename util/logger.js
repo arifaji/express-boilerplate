@@ -53,7 +53,7 @@ const logger = winston.createLogger({
 
 logger.stream = {
   write(message) {
-    logger.info(message);
+    logger.debug(message);
   },
 };
 

@@ -1,6 +1,10 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 const logger = require('./util/logger');
 const {
   errorLogger,
@@ -21,5 +25,9 @@ require('./routes')(app);
 app.use(errorLogger);
 app.use(errorResponder);
 app.use(invalidPathHandler);
+
+if (process.env.ENV === 'dev') {
+  logger.debug(`Development mode`);
+}
 
 app.listen(port, () => logger.info(`Server running at port ${port}`));
